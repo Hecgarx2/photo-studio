@@ -1,0 +1,13 @@
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+td, th {
+    border: solid 1px #5e5e5e;
+}
