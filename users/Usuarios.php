@@ -22,7 +22,6 @@
             <th>Nombre</th>
             <th>Correo</th>
             <th>Rol</th>
-            <th>Opciones</th>
         </tr>
         <?php foreach ($registros as $usuario):?>
         <tr>
@@ -30,8 +29,8 @@
             <td> <?php echo $usuario->correo ?> </td>
             <td> <?php find_rol($usuario->rol) ?> </td>
 
-            <td class="boton"><input type="button" name="delete" id="delete" value="Eliminar Usuario"
-                class="boton"><input type="button" name="update" id="update" value="Modificar Usuario"></td>
+            <td class="boton"><a href="Eliminar.php?correo=<?php echo $usuario->correo?>"><input type="button" name="delete" id="delete" value="Eliminar Usuario"></a> <!--Boton Eliminar-->
+            <td class="boton"><a href="Eliminar.php?correo=<?php echo $usuario->correo?>"><input type="button" name="update" id="update" value="Modificar Usuario"></a> <!--Boton Eliminar-->
         </tr>
         <?php endforeach; ?>
         <tr>
